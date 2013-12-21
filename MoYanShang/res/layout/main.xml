@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<RelativeLayout  
+   xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"
+    android:id="@+id/ui"    
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_dark">   
+    <ViewFlipper android:id="@+id/details"  
+       android:layout_width="fill_parent"    
+       android:layout_height="fill_parent"  
+       android:persistentDrawingCache="animation"  
+       android:flipInterval="1000"  
+       android:background="@android:color/background_dark"
+       android:inAnimation="@anim/push_left_in"  
+	   android:outAnimation="@anim/push_left_out"  >    
+      <RelativeLayout 
+           android:orientation="vertical"  
+           android:layout_width="fill_parent"    
+           android:layout_height="wrap_content">   
+           <TextView
+			android:id="@+id/welcome1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20dip"
+			android:singleLine="false"
+			android:layout_marginTop="50dip"
+			android:text="秋天来了，叶子黄了，这季节我收获了悲伤。菊花开了满天的香可是你早已不在我身旁。"
+			android:layout_marginLeft="10dip"
+			/>
+           <ImageView     
+            android:src="@drawable/welcome_01"  
+            android:layout_below="@id/welcome1"
+           android:layout_centerInParent="true"
+           android:layout_marginTop="30dip"
+             android:layout_width="200dip"  
+              android:layout_height="200dip"/>
+            
+              
+      </RelativeLayout>   
+    
+      <RelativeLayout 
+        android:orientation="vertical"  
+          android:layout_width="fill_parent"    
+          android:layout_height="wrap_content">
+             <TextView
+			android:id="@+id/welcome2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20dip"
+			android:singleLine="false"
+			android:layout_marginTop="50dip"
+			android:text="那年，遇见了你，相信了叫永远的东西；那年，你离我而去，我一个人收拾着回忆。"
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			/>   
+			<ImageView     
+            android:src="@drawable/welcome_02"  
+            android:layout_below="@id/welcome2"
+           android:layout_centerInParent="true"
+             android:layout_marginTop="30dip"
+              android:layout_width="200dip"  
+              android:layout_height="200dip"/> 
+         
+           
+       </RelativeLayout>   
+         <RelativeLayout   
+        android:orientation="vertical"  
+          android:layout_width="fill_parent"    
+          android:layout_height="wrap_content">   
+             <TextView
+			android:id="@+id/welcome3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20dip"
+			android:singleLine="false"
+			android:layout_marginTop="50dip"
+			android:text="滴不尽相思血泪抛红豆，开不完春柳春花满画楼。"
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			/>
+             <ImageView     
+            android:src="@drawable/welcome_03"  
+            android:layout_below="@id/welcome3"
+           android:layout_centerInParent="true"
+             android:layout_marginTop="30dip"
+              android:layout_width="200dip"  
+              android:layout_height="200dip"/>
+            
+               
+       </RelativeLayout>   
+       <RelativeLayout
+        android:orientation="vertical"  
+          android:layout_width="fill_parent"    
+          android:layout_height="wrap_content">  
+           <TextView
+			android:id="@+id/welcome4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20dip"
+			android:singleLine="false"
+			android:layout_marginTop="50dip"
+			android:text="转身，一缕冷香远，逝雪深，笑意浅。来世你渡我，可愿？"
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			/> 
+			<ImageView     
+			    android:id="@+id/last"
+            android:src="@drawable/welcome_04"  
+            android:layout_below="@id/welcome4"
+           android:layout_centerInParent="true"
+             android:layout_marginTop="30dip"
+              android:layout_width="200dip"  
+              android:layout_height="200dip"/>
+             
+           
+       </RelativeLayout>   
+       <RelativeLayout   
+        android:orientation="vertical"  
+          android:layout_width="fill_parent"    
+          android:layout_height="wrap_content">   
+             <TextView
+			android:id="@+id/welcome5"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20dip"
+			android:singleLine="false"
+			android:layout_marginTop="50dip"
+			android:text="握住苍老，禁锢了时空，一下子到了地老天荒"
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			/>
+             <ImageView     
+            android:src="@drawable/welcome_05"  
+            android:layout_below="@id/welcome5"
+           android:layout_centerInParent="true"
+             android:layout_marginTop="30dip"
+              android:layout_width="200dip"  
+              android:layout_height="200dip"/>
+            
+               
+       </RelativeLayout>   
+       <RelativeLayout   
+        android:orientation="vertical"  
+          android:layout_width="fill_parent"    
+          android:layout_height="wrap_content">   
+             <TextView
+			android:id="@+id/welcome6"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20dip"
+			android:singleLine="false"
+			android:layout_marginTop="50dip"
+			android:text="我决定不再流泪，就像你决定要离开我一般地坚定。"
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			/>
+             <ImageView     
+                 android:id="@+id/last"
+            android:src="@drawable/welcome_06"  
+            android:layout_below="@id/welcome6"
+           android:layout_centerInParent="true"
+             android:layout_marginTop="30dip"
+              android:layout_width="200dip"  
+              android:layout_height="200dip"/>
+            
+            <Button 
+               android:id="@+id/beginread"
+               android:background="@drawable/button_begin"
+               android:layout_width="fill_parent"
+               android:layout_height="50dip"
+               android:layout_below="@id/last"
+               android:layout_marginTop="20dip"
+               android:layout_marginLeft="50dip"
+               android:layout_marginRight="50dip"
+               android:text="开始阅读"/>    
+               
+       </RelativeLayout>   
+    </ViewFlipper>
+    <ImageView   
+             android:id="@+id/image_loader"   
+            android:layout_alignParentBottom="true"  
+           android:layout_marginBottom="60dip"
+             android:layout_width="fill_parent"  
+              android:layout_height="wrap_content"/>
+    
+
+
+</RelativeLayout>  

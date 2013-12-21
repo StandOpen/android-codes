@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:orientation="vertical"
+    tools:context=".worddata" >
+<RelativeLayout 
+    android:id="@+id/head"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+    <ImageView 
+       android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:src="@drawable/word_press"
+        android:id="@+id/warning" />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/warning"
+        android:textColor="@android:color/background_dark"
+        android:textSize="10pt"
+        android:text="编辑内容"/>
+</RelativeLayout>
+    
+<RelativeLayout 
+    android:id="@+id/center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/head"
+
+  >
+   <EditText 
+       android:layout_width="fill_parent"
+       android:layout_height="200dp"
+       android:singleLine="false"
+       android:typeface="monospace"
+       android:hint="请输入内容"
+       android:gravity="top"
+       android:id="@+id/input"/>
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/center"
+  
+   
+  >
+    <Button 
+        android:id="@+id/cancel"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dip"
+       android:layout_centerVertical="true"
+        android:background="@drawable/cancel"/>
+    <Button 
+        android:id="@+id/ok"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+         android:layout_marginRight="5dip"
+         android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ok"/>
+</RelativeLayout>
+</RelativeLayout>

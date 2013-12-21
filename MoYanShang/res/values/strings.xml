@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">开发者：一米\nQQ:981269934\n邮箱：981269934@qq.com\n申明：如发现该应用有错误或者好的建议请联系我，谢谢合作。</string>
+    <string name="app_name">莫言殇</string>
+<string name="love">爱情疗伤</string>
+<string name="qianming">个性签名</string>
+<string name="beautiful">唯美语句</string>
+<string name="old">婉约古风</string>
+<string name="mysad">吾伤吾感</string>
+</resources>

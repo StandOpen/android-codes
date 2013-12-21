@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/close1"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    tools:context=".CloseDialog" >
+<RelativeLayout 
+    android:id="@+id/head"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView 
+       android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:src="@drawable/warning_icon"
+        android:id="@+id/warning" />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/warning"
+        android:textColor="@android:color/background_dark"
+        android:textSize="9pt"
+        android:text="提示"/>
+</RelativeLayout>
+    
+<RelativeLayout 
+    android:id="@+id/center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/head"
+    android:layout_marginTop="10dip"
+  >
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:typeface="serif"
+        android:textColor="@android:color/background_dark"
+        android:textSize="13pt"
+        android:layout_marginLeft="50dp"
+        android:text="确定退出吗？"/>
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/center"
+  android:layout_marginTop="10dip"
+ 
+  >
+    <Button 
+        android:id="@+id/cancel"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dip"
+       android:layout_centerVertical="true"
+        android:background="@drawable/cancel"/>
+    <Button 
+        android:id="@+id/ok"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+         android:layout_marginRight="5dip"
+         android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ok"/>
+</RelativeLayout>
+</RelativeLayout>

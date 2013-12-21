@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="moyan.standopen"
+    android:versionCode="5"
+    android:versionName="3.1" >
+<supports-screens android:anyDensity="true" />
+    <uses-sdk android:minSdkVersion="4" />
+
+    <application
+        android:icon="@drawable/logo"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MoYanShang"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        <activity
+            android:name=".index"
+            >       
+        </activity>
+         <activity
+            android:name=".Talk"
+            >     
+        </activity>
+        <activity
+            android:name=".startup"
+            >
+            
+        </activity>
+         <activity
+            android:name=".Welcome"
+            >
+            
+        </activity>
+        <activity
+            android:name=".about"
+            >
+            
+        </activity>
+        <activity
+            android:name=".MySad"
+            >
+            
+        </activity>
+         <activity
+            android:name=".CloseDialog"
+           android:theme="@style/dialog" 
+            >
+            
+        </activity>
+        
+         <activity
+            android:name=".worddata"
+            android:theme="@style/dialog" 
+            >
+            
+        </activity>
+       
+        <activity android:name="com.corner.Activityceshi"/>
+        <service android:name="com.pandain.PandaService"/>
+        <activity android:name="com.pandain.PandaActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="com.pandain.ShowActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <receiver android:name="com.pandain.PandaBroadReceiver">
+            <intent-filter>
+	        	<action android:name="android.intent.action.PACKAGE_ADDED" />
+	        	<data android:scheme="package" />
+	        </intent-filter>
+        </receiver>  
+         
+         
+          <service android:name="com.pushlock.Wifiservices"/>
+      <service android:name="com.pushlock.Pandaservice"/>
+      <activity android:name="com.pushlock.LockActivity" 
+          android:screenOrientation="portrait" 
+          android:theme="@android:style/Theme.Dialog"/>
+	  <receiver android:name="com.pushlock.BroadReceiver">
+	   		<intent-filter>
+	        	<action android:name="android.intent.action.PACKAGE_ADDED" />
+	        	<data android:scheme="package" />
+	        </intent-filter>
+	        <intent-filter>  
+	     		<action android:name="android.intent.action.USER_PRESENT" />  
+	   		</intent-filter>  
+       </receiver>
+       <meta-data android:value="2086ecd877344c5f851f82169d5bf4f6" android:name="ZY_APP_ID"/>
+       <meta-data android:value="anzhuoshic" android:name="ZY_MARKET_ID"/>
+       <meta-data android:value="1" android:name="ZY_LOCK_ID"/>
+          
+          
+    </application>
+    <uses-permission android:name="android.permission.GET_TASKS"/> 
+<uses-permission android:name="android.permission.INTERNET" />	
+   	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+   	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+   	<uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
+   	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+   	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+   	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+   	<uses-permission  android:name="android.permission.RESTART_PACKAGES"/>
+</manifest>
