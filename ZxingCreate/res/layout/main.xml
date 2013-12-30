@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+     >
+<RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:background="@drawable/head_bg"
+        android:layout_height="50.0dip" >
+        <Button
+        android:id="@+id/btn_scanner"
+        android:layout_width="wrap_content"
+        android:background="@drawable/btn_back"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5.0dip"
+        android:textColor="@android:color/white"
+        android:text="扫描"
+         />
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18dp"
+        android:text="二维码说说"
+        android:textColor="@android:color/white"
+        android:singleLine="true" />
+      <Button
+        android:id="@+id/btn_more"
+        android:layout_width="wrap_content"
+        android:background="@drawable/btn_back"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5.0dip"
+     
+        android:textColor="@android:color/white"
+        android:text="更多"
+         />
+</RelativeLayout>
+<EditText 
+    android:id="@+id/input"
+    android:layout_below="@id/top_relative"
+    android:background="@drawable/edit_bg"
+    android:padding="5dip"
+    android:maxLength="500"
+    android:gravity="top"
+    android:hint="请输入要发送的信息"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="50dip"/>
+    <ImageView 
+        android:id="@+id/img"
+        android:layout_below="@id/top_relative"
+        android:visibility="gone"
+        android:layout_width="300dip"
+        android:layout_height="300dip"/>
+<LinearLayout
+    android:id="@+id/buttons"
+    android:layout_width="fill_parent"
+    
+    android:layout_height="50dip"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dip"
+>
+    
+     <Button 
+       
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:background="@drawable/close_left"
+            android:text="生成"
+            android:id="@+id/make"
+            />
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:background="@drawable/close_right"
+            android:text="清空"
+            android:id="@+id/clear"
+            />
+    
+    
+    </LinearLayout>>
+</RelativeLayout>

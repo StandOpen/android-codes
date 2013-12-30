@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/index"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".TestMuluActivity" >
+
+ 
+   <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:background="@drawable/title_about"
+        android:layout_height="50.0dip" >
+         <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:background="@drawable/back"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5.0dip"
+        android:textColor="@android:color/white"
+        android:text="返回"
+         />
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18dp"
+        android:text="更多内容"
+        android:textColor="@android:color/white"
+        android:singleLine="true" />
+</RelativeLayout>
+    
+    <zxing.moyan.mybutton
+       android:id="@+id/three"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/beautiful"
+        android:layout_marginLeft="40dip"
+       android:layout_marginRight="50dip"
+       android:textSize="12pt"
+       android:gravity="center"
+       android:paddingRight="30dip"
+       android:layout_centerInParent="true"
+       />
+    
+    <zxing.moyan.mybutton
+       android:id="@+id/second"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/qianming"
+        android:layout_marginLeft="40dip"
+       android:layout_marginRight="50dip"
+       android:textSize="12pt"
+       android:gravity="center"
+       android:paddingRight="30dip"
+       android:layout_above="@id/three"
+       android:layout_marginBottom="10dip"
+    />
+    
+    
+    <zxing.moyan.mybutton
+       android:id="@+id/first"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/love"
+        android:layout_marginLeft="40dip"
+       android:layout_marginRight="50dip"
+       android:textSize="12pt"
+       android:gravity="center"
+       android:paddingRight="30dip"
+       android:layout_above="@id/second"
+       android:layout_marginBottom="10dip"
+       />
+    
+   <zxing.moyan.mybutton
+       android:id="@+id/four"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/old"
+      android:textSize="12pt"
+      android:gravity="center"
+      android:paddingRight="30dip"
+      android:layout_marginRight="50dip"
+        android:layout_marginLeft="40dip"
+       android:layout_below="@id/three"
+       android:layout_marginTop="10dip"
+       />
+   <zxing.moyan.mybutton
+       android:id="@+id/mysad"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/mysad"
+      android:textSize="12pt"
+      android:gravity="center"
+      android:paddingRight="30dip"
+      android:layout_marginLeft="40dip"
+       android:layout_marginRight="50dip"
+       android:layout_below="@id/four"
+       android:layout_marginTop="10dip"
+       />
+ 
+    <RelativeLayout android:id="@+id/adcontainer"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		>
+	</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ZxingCreate!</string>
+    <string name="app_name">二维码说说</string>
+   <string name="love">爱情疗伤</string>
+<string name="qianming">个性签名</string>
+<string name="beautiful">唯美语句</string>
+<string name="old">婉约古风</string>
+<string name="mysad">关于</string>
+</resources>

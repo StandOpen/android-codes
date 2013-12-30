@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/talk_layout"
+    android:background="@android:color/black"
+    >
+    <RelativeLayout
+        android:id="@+id/head"
+        android:orientation="vertical" 
+        android:background="@drawable/head_bg"
+        android:layout_width="fill_parent" 
+        android:layout_height="50dip">
+        <Button 
+            android:id="@+id/back"
+         android:layout_width="50dip"
+         android:layout_height="30dip"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="5dip"
+         android:text="返回"
+         android:textColor="@android:color/white"
+         android:background="@drawable/back"/>
+     <TextView 
+         android:id="@+id/title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:textSize="10pt"
+         android:textColor="@android:color/white"
+         android:text="未设置"/>
+   
+    
+    </RelativeLayout>
+   
+<ListView 
+android:id="@+id/list"
+android:layout_below="@id/head"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:cacheColorHint="#00000000"
+    />
+  <RelativeLayout android:id="@+id/adcontainer"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		>
+	</RelativeLayout>
+
+</RelativeLayout>
