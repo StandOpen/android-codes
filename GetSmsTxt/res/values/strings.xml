@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, GetSmsTxtActivity!</string>
+    <string name="app_name">GetSmsTxt</string>
+    <string name="send">发出的信息</string>
+    <string name="from">收到的信息</string>
+    <string name="all">全部信息</string>
+    <string name="check_text">请选择排版方式：</string>
+    <string name="datesort">按日期排序</string>
+    <string name="chatsort">聊天形式（推荐）</string>
+    <string name="seclect_text">请选择导出的联系人：</string>
+    <string name="path_text">请填写保存路径：</string>
+</resources>

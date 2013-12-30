@@ -1,0 +1,14 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="radioButton">
+    	<item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    <item name="android:background">@drawable/radiobtn_selector</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:drawablePadding">-5dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+</resources>

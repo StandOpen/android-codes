@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#ffefebe7">
+  
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:background="@drawable/head_bg"
+        android:layout_height="50.0dip" >
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="15dp"
+        android:padding="10.0dip"
+        android:text="手机轰炸"
+        android:textColor="@android:color/white"
+        android:singleLine="true" />
+
+</RelativeLayout>
+
+              <TextView 
+                  android:id="@+id/tipforyou"
+                  android:layout_below="@id/top_relative"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dip"
+                  android:text="把要攻击的手机号码输入到下面，不要随意攻击。"/>
+            <RelativeLayout
+                android:id="@+id/input_yzm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               android:background="@drawable/chat_edit"
+               android:layout_below="@id/tipforyou"
+                android:layout_margin="10dip"
+                >
+                <ImageView 
+                    android:id="@+id/icon_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/yixin_profile_btn_phone"/>
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/icon_tip"
+                    android:background="@android:color/white"
+                    android:hint="输入手机号码"
+                    android:singleLine="true" 
+                    />
+
+            </RelativeLayout>
+             <Button 
+                android:id="@+id/submit"
+                android:layout_below="@id/input_yzm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="10dip"
+                android:textColor="@android:color/white"
+                android:layout_margin="10dip"
+                android:background="@drawable/exit_btn"
+                android:text="启动轰炸"/>
+             
+             <ScrollView 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/submit"
+                 android:layout_marginTop="10dip">
+             <TextView 
+                 android:id="@+id/result"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"/>
+             </ScrollView>
+</RelativeLayout>
+

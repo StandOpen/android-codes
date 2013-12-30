@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<EditText 
+	    android:layout_width="fill_parent"
+	    android:layout_height="100dip"
+	    android:id="@+id/input"
+	   
+	    />"
+	<TableRow android:id="@+id/TableRow01" 
+	    android:layout_width="wrap_content"
+	     android:layout_height="wrap_content">
+		<Button android:text="create db" 
+		    android:id="@+id/Button01"
+			android:height="30px" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<Button android:text="insert some records" 
+		    android:id="@+id/Button02"
+			android:height="30px" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</TableRow>
+	<TableRow android:id="@+id/TableRow01" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content">
+	<Button android:text="delete one" 
+	    android:id="@+id/Button04"
+		android:height="30px" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<Button android:text="clear all" 
+	    android:id="@+id/Button05"
+		android:height="30px" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	</TableRow>
+	<Button android:text="view records"
+	     android:id="@+id/Button03"
+		android:height="30px"
+		 android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		 android:layout_gravity="center"/>
+	<TextView android:text="..." 
+	    android:id="@+id/TextView01"
+		android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+	
+</LinearLayout>

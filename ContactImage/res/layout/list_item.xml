@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="60dip"
+  android:orientation="horizontal"
+  android:background="@drawable/item"
+  >
+  
+  <ImageView
+      
+      android:layout_width="50dip"
+      android:layout_height="50dip"
+      android:layout_gravity="center"
+      android:layout_centerVertical="true"
+      android:id="@+id/messagegedetail_rov_icon"
+      android:src="@drawable/clock"
+  />
+  <TextView 
+      android:id="@+id/name"
+      android:gravity="center"
+      android:textSize="10pt"
+      android:textColor="@android:color/black"
+      android:layout_marginLeft="55dip"
+      android:layout_marginRight="40dip"
+      android:singleLine="false"
+      android:layout_width="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_height="50dip"/>
+  <TextView 
+      android:id="@+id/phone_number"
+      android:gravity="center"
+      android:textSize="7pt"
+      android:textColor="@android:color/black"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentBottom="true"
+  />
+     
+</RelativeLayout>

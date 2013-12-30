@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, PlayNetworkMusicActivity!</string>
+    <string name="app_name">PlayNetworkMusic</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="Prepared">prepared:</string>
+    <string name="prepared_value"> is Ok!!</string>
+    <string name="percent">percent:</string>
+    <string name="completion">completion:</string>
+     <string name="completion_value">音乐结束</string>
+</resources>

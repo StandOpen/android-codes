@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".DownloadActivity" >
+<Button 
+     android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/get"
+        android:text="获取文本文件"/>
+<ScrollView 
+    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    >
+<EditText 
+     android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:scrollbars="vertical"/>
+</ScrollView>
+   
+
+</LinearLayout>

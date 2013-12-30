@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    >
+    
+    <SurfaceView
+    android:id = "@+id/mySurfaceView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    </SurfaceView>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="50dp"
+    >
+<Button
+	android:id="@+id/myButton"  
+    android:layout_width="100dp" 
+    android:layout_height="wrap_content" 
+    android:layout_marginLeft="50dp"
+    android:text="播放"/>
+ <Button
+	android:id="@+id/myButton2"  
+    android:layout_width="100dp" 
+    android:layout_height="wrap_content" 
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="50dp"
+    android:text="暂停"/> 
+    <Button
+	android:id="@+id/myButton3"  
+    android:layout_width="100dp" 
+    android:layout_height="wrap_content" 
+    android:layout_centerInParent="true"
+    android:text="录像"/>
+</RelativeLayout>
+</RelativeLayout>

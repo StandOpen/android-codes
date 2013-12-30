@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@android:color/white">
+  
+<RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:background="@drawable/head_bg"
+        android:layout_height="50.0dip" >
+
+
+    <TextView
+        android:id="@+id/titleText"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18dp"
+        android:padding="10.0dip"
+        android:text="分类"
+        android:textColor="@android:color/white"
+        android:singleLine="true" />
+
+</RelativeLayout>
+
+<android.support.v4.view.ViewPager
+    android:layout_below="@id/top_relative"
+
+    android:layout_centerInParent="true"
+    android:id="@+id/vPager"          
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
+

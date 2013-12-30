@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">DownLoading</string>
+    <string name="transparent">#000000</string>
+    <string name="white">#ffffff</string>
+
+</resources>
