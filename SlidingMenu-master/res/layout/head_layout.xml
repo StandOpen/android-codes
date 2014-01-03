@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/biz_font_default"
+    >
+
+    <LinearLayout
+        android:id="@+id/head_layout_showLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/biz_top_invirtad"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/head_layout_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/head_layout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="38px"
+            android:textColor="@color/white"
+            android:layout_marginLeft="3dp" 
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/head_layout_showRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:background="@drawable/biz_top_invirtad" >
+
+       <ImageView
+                android:id="@+id/head_layout_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_main_action_personal_normal" />
+    </LinearLayout>
+
+</RelativeLayout>

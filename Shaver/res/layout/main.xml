@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/shaverlayout"
+    android:background="@drawable/bk_02"
+    tools:context=".Shaver" >
+    <ImageButton 
+        android:id="@+id/refresh"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_01"/>
+<ImageView 
+    android:id="@+id/shaverimage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10dip"
+    android:layout_marginBottom="50dip"
+    android:src="@drawable/tixudao"/>
+
+<ImageButton 
+   android:id="@+id/buttonkaiguan"
+    android:layout_width="60dip"
+    android:layout_height="60dip"
+    android:layout_centerInParent="true"
+    android:background="@drawable/button_off_01"
+     />
+<ImageView 
+    android:id="@+id/battery"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/buttonkaiguan"
+    android:layout_marginTop="30dip"/>
+ <cn.domob.android.ads.DomobAdView
+			android:id="@+id/domobAdXML" 
+			android:layout_alignParentBottom="true"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"/>
+</RelativeLayout>

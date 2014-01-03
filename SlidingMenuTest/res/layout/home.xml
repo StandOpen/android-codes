@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <RelativeLayout
+        android:id="@+id/head"
+        android:orientation="vertical" 
+        android:background="@drawable/title_bg"
+        android:layout_width="fill_parent" 
+        android:layout_height="50dip">
+       <ImageButton 
+         android:id="@+id/menu"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:gravity="center"
+         android:background="@drawable/menu"/>
+         
+     <TextView 
+           android:id="@+id/type"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         
+         android:textSize="10pt"
+         android:textColor="@android:color/white"
+         android:text="动态"/>
+     <ImageButton 
+         android:id="@+id/share"
+          android:layout_width="50dip"
+         android:layout_height="35dip"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="5dip"
+         android:background="@drawable/menu"/>
+    </RelativeLayout>
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip" >
+        </TabWidget>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <!-- 将tabhost的tabcontent隐藏，用viewPage填充 -->
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
